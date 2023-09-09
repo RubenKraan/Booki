@@ -1,6 +1,6 @@
 * {
     font-family: Raleway, sans-serif;
-    max-width: 1400px;
+    max-width: 1440px;
     margin: auto
 }
 #logo
@@ -217,11 +217,12 @@ h2{
     width: 30%;
 }
 .hotel img{
-    width: 98%;
+    width: 100%;
     height: 100px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px; 
     margin: 0px;
+    object-fit: cover;
 }
 .hotel h3{
     font-size: 14px;
@@ -398,7 +399,7 @@ footer p{
     margin-left: 40px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
     /*version tablet*/
     .bloc-hebrgement {
         display: flex;
@@ -569,7 +570,7 @@ footer p{
     .hotel img{
         height: 65%;
         width: 100%;
-        object-fit: initial;
+        object-fit: cover;
     }
     aside{
         background-color: #F2F2F2;
