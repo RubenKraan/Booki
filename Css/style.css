@@ -17,6 +17,7 @@ header{
     flex-flow: row;
     margin-left: 25px;
     margin-right: 25px;
+    margin-bottom: 25px;
 }
 .headerimg{
     margin: 0px;
@@ -34,16 +35,16 @@ nav ul {
 }
 nav li {
     padding-top: 30px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-top: 2px solid transparent;
 }
 nav li a {
     text-align: center;
-    padding: 14px 16px;
+    padding-top: 14px;
     text-decoration: none;
     color: black;
-    font-size: 12px;
+    font-size: 16px;
     margin: 0px;
   }
 nav li:hover {
@@ -68,9 +69,11 @@ nav li a:hover{
     margin-top: 15px;
     margin-left: 25px;
     margin-right: 0px;
+    margin-bottom: 10px;
 }
 .intro p{
-    font-size: 12px;
+    font-size: 16px;
+
     margin-top: 5px;
     margin-left: 0px;
     margin-right: 0px;
@@ -80,16 +83,19 @@ nav li a:hover{
     display: flex;
     justify-content: left;
     flex-flow: row;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 25px;
     margin-right: 0px;
+    margin-bottom: 20px;
 }
 .grey{
     background-color: #F2F2F2;
     padding: 10px 10px 10px 15px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    border-color: #f2f2f20f;
+   
+    border-color: none;
+    border-style: none;
     margin: 0px;
 }
 .big{
@@ -98,7 +104,8 @@ nav li a:hover{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     color: white;
-    border-color: #0065FC;
+    border-color: none;
+    border-style: none;
     margin: 0px;
 }
 .recherche{
@@ -125,6 +132,7 @@ nav li a:hover{
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 10px;
+    margin-bottom: 15px;
 } 
 .filtres a {
     display: block;
@@ -132,7 +140,7 @@ nav li a:hover{
     padding: 14px 16px;
     text-decoration: none;
     color: black;
-    font-size: 12px;
+    font-size: 18px;
     font-family: 'Raleway';
     font-weight: lighter;
     margin: 0px;
@@ -149,16 +157,16 @@ nav li a:hover{
 }
 .filtres a:hover {
     color: #0065FC;
-    border-top: 2px solid #0065FC;
     margin: 0px;
   }
 .filtres button{
     padding: 10px 10px 10px 10px;
     background-color: white;
-    border-color: #f2f2f22e;
+    border-color: #DEEBFF;
+    border: 2px solid #E8E8E8; 
+    box-shadow: none;
     font-weight: bold;
     border-radius: 20px;
-    box-shadow: none;
     margin: 0px;
 }
 .filtres button:hover{
@@ -167,12 +175,12 @@ nav li a:hover{
 }
 .filtresBleu{
     color: #0065FC;
-    font-size: 14px;
+    font-size: 18px;
     margin: 0px;
 }
 /*infromation*/
 .information{
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 10px;
     margin-left: 25px;
     margin-right: 0px;
@@ -283,12 +291,6 @@ nav li a:hover{
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid {
-    color: var(--main-color);
-}
-
-
-
 a {
     color: inherit;
     text-decoration: none;
@@ -330,7 +332,9 @@ a {
     align-items: center;
     margin: 0;
 }
-
+.populaires-title i{
+    color:#0065FC;
+}
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
@@ -370,6 +374,7 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
     margin-left: 0px;
+    color:#0065FC;
 }
 
 /*aside{
@@ -453,12 +458,15 @@ aside img{
     align-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    margin: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 30px;
 }
 .activities h2{
     margin-left: 25px;
     margin-right: 0px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    margin-top: 50px
 }
 .activites_container{
     width: 23%;
@@ -472,7 +480,7 @@ aside img{
     margin: 0px;
 }
 .activites_container h3{
-    font-size: 15px;
+    font-size: 16px;
     color: black;
     margin-left: 15px;
     margin-right: 0px;
@@ -507,7 +515,7 @@ footer li a{
     margin: 0px;
 }
 footer p{
-    font-size: 12px;
+    font-size: 16px;
     margin: 0px;
 }
 .footer{
@@ -523,6 +531,15 @@ footer p{
         display: flex;
         justify-content: space-around;
         flex-flow: column;
+    }
+    .filtres{
+        flex-flow: column;
+    }
+    .classfiltres{
+        gap: 10px;
+        margin-left: 0;
+        margin-right: auto;    
+        justify-content: left;
     }
     .activites_container{ 
         height: 300px;
@@ -564,11 +581,11 @@ footer p{
     }
 
     .populaires-cards .card-title {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     /*
@@ -604,7 +621,10 @@ footer p{
 
 @media screen and (max-width: 768px) {
     /* version mobiel */
-
+    #logo{
+        height: 100px;
+        width: auto
+    }
     .hebergements-and-populaires{
         flex-flow: column-reverse;
     }
@@ -618,9 +638,9 @@ footer p{
         width: 100%;
     }
     #logo{
-        width: 60px;
-        height: 30px;
-        margin-left: 47%;
+        width: 80px;
+        height: auto;
+        margin-left: 46%;
     }
     nav ul{
         flex-flow: row-reverse;
@@ -637,7 +657,7 @@ footer p{
         text-align: center;
       }
     nav li a{
-        font-size: 20px;
+        font-size: 16px;
     }
     nav li:hover {
         color: #0065FC;
@@ -649,7 +669,7 @@ footer p{
         margin-left: 25px;
     }
     h2{
-        font-size: 18px;
+        font-size: 22px;
     }
     .search{
         margin-left: 25px;
@@ -663,7 +683,7 @@ footer p{
     }
     .grey{
         padding: 15px 17px 15px 17px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .small{
         display: flex;
@@ -672,19 +692,22 @@ footer p{
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         color: white;
-        font-size: 18px;
+        font-size: 16px;
         border-color: #0065FC;
+    }
+    small i{
+        color: #F2F2F2;
     }
     .recherche{
         width: 67%;
-        font-size: 20px;
+        font-size: 22px;
     }
     .filtres{
         flex-flow: column;
     }
     .buttonfiltres{
         width: 49%;
-        margin-bottom: 20px
+        margin-bottom: 14px
     }
     .buttonfiltres button{
         width: 100%;
