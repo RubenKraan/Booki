@@ -597,7 +597,7 @@ footer p{
     }
     aside img{
         width: 100%;
-        object-fit: initial;
+        object-fit: cover;
     }
     .activities{
         width: 100%;
