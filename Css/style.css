@@ -221,7 +221,6 @@ nav li a:hover{
 
 /*hebergement*/
 .Hebergements{
-    background-color: #F2F2F2;
     border-radius: 20px;
     margin: 25px;
     padding: 25px;
@@ -382,79 +381,7 @@ a {
     color:#0065FC;
 }
 
-/*aside{
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    margin-top: 25px;
-    padding: 25px;
-    width: 40%; 
-}
-aside a{
-    text-decoration: none;
-    color:black;
-    margin: 0px;
-}    
-aside img{
-    width: 100%;
-    height: 140px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px; 
-    margin: 0px;
-}
-.textaside{
-    overflow-wrap: break-word;
-    margin: 0px;
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: column;
-}
-.populairestext{
-    margin: 0px;
-}
-.populairesimg{
-    margin: 0px;
-    width: 33%;
-}
-.populaires_flex{
-    display: flex;
-    justify-content: space-between;
-    margin: 0px;
-    width: 95%;
-}
-.populairestitle{
-    margin-left: 0px;
-    margin-right: 0px;
-}
-.graph{
-    color: #0065FC;
-    margin-left: 0px;
-    margin-right: 0px;
-    font-size: 18px;
-}
-.populaires_container{
-    background-color: white;
-    margin: 5px 5px 5px 3px;
-    padding: 5px;
-    border-radius: 15px;
-    width: 95%;
-    max-height: 140px;
-}
-.populaires_container a{
-    display: flex;
-    justify-content: left;
-    flex-flow: row;
-    gap: 5px;
-    margin: 0px;
-}
-.populaires_container h3{
-    font-size: 18px;
-    margin: 0px;
-}
-.populaires_container p{
-    font-size: 14px;
-    margin: 0px;
-}*/
+
 /*activites*/
 .activites_flex{
     display: flex;
@@ -489,6 +416,7 @@ aside img{
     color: black;
     margin-left: 15px;
     margin-right: 0px;
+    margin-top: 8px;
 }
 .activites_container img{
     width: 100%;
@@ -545,7 +473,9 @@ footer p{
     }
     .hebergements-and-populaires section {
         margin: auto;
+        margin-top: 20px;
         margin-bottom: 15px;
+        width: 93%;
     }
     .filtres{
         flex-flow: column;
@@ -611,24 +541,7 @@ footer p{
     .activities img{
         object-fit: cover;
     }
-    /*
-    .populaires{
-        display: flex;
-        justify-content: space-around;
-    }
-    aside{
-        width: 90%;
-    }
-    .populaires_container{
-        width: 30%;
-    }
-    .populairesimg{
-        width: 45%;
-    }
-    .textaside{
-        width: 55%;
-    }
-    */
+
     footer{
         gap: 80px;
     }
@@ -651,7 +564,13 @@ footer p{
     }
     .hebergements-and-populaires{
         flex-flow: column-reverse;
-        
+      
+    }
+    .hebergements-and-populaires section{
+        width: 100%;
+    }
+    .hebergements-and-populaires section .Hebergement{
+        background-color: white;
     }
     h2{
         font-size: 22px
@@ -711,8 +630,7 @@ footer p{
         display: flex;
         background-color:   #0065FC;
         padding: 15px 17px 15px 17px;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
+        border-radius: 15px;
         color: white;
         font-size: 16px;
         border-color: #0065FC;
@@ -770,6 +688,9 @@ footer p{
     .Hebergements h2{
         margin-bottom: 20px;
     }
+    h2#Hebergement{
+        margin-bottom: 20px;
+    }
     .hotel{
         width: 100%;
         border: #F2F2F2 1px solid;
@@ -781,6 +702,9 @@ footer p{
         width: 100%;
         object-fit: cover;
     }
+    .hebergements-and-populaires section{
+        border-radius: 0;
+    }
     .populaires-cards{
         flex-flow: column;
         width: 100%;
@@ -788,37 +712,6 @@ footer p{
     .populaires-cards a{
         width: 100%;
     }
-     /*
-    aside{
-        background-color: #F2F2F2;
-        border-radius: 0px;
-        margin: auto;
-        width: 100%;
-        padding: 0px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-    }
-    .populaires{
-        flex-flow: column;
-        margin: auto;
-        gap: 5px;
-    }
-    .populaires_container{
-        width: 90%;
-        margin: auto;
-    }
-    .populaires_container img{
-        object-fit: cover;
-    }
-    .populaires_flex{
-        width: 90%;
-        margin: auto;
-    }
-    aside img{
-        width: 100%;
-        object-fit: cover;
-    }*/
     .activities{
         width: 100%;
         margin: auto;
@@ -846,5 +739,8 @@ footer p{
         padding: 0px;
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+    section.hebergements{
+        background-color: white;
     }
 }
