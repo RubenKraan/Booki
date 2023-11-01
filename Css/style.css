@@ -555,8 +555,11 @@ footer p{
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
     /* version mobiel */
+    body{
+        min-width: 320px;
+    }
     #logo{
         height: 19px;
         width: auto;
@@ -613,7 +616,7 @@ footer p{
     }
     .search{
         margin-left: 25px;
-        width: 100%;
+        width: 90%;
     }
     .information{
         margin-left: 25px;
@@ -648,7 +651,7 @@ footer p{
     }
     .filtres{
         flex-flow: column;
-        width: 100%
+        width: 95%
     }
     .classfiltres{
         width: 95%;
